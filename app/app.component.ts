@@ -13,6 +13,7 @@ import { Keg } from './keg.model';
     <hr>
     <edit-keg
       [childSelectedKeg]="selectedKeg"
+      (doneClickedSender)="finishedEditing()"
     ></edit-keg>
   </div>
   `
