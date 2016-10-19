@@ -14,9 +14,12 @@ import { PourBeerComponent } from './pour-beer.component';
   <div *ngFor="let currentKeg of childKegList | emptiness:selectedEmptiness">
     <div [class.cheapBeer]="currentKeg.price < 5.5">
       <h3>{{ currentKeg.brand }}</h3>
-      <p>{{currentKeg.name}}, {{currentKeg.price}}, {{currentKeg.abv}}, {{currentKeg.pintsLeft}}
+      <h4>{{currentKeg.name}}</h4>
+      <p>Cost: $ {{currentKeg.price}}</p>
+      <p>ABV: {{currentKeg.abv}}%</p>
+      <p>Pints until empty: {{currentKeg.pintsLeft}}</p>
       <pour-beer [childKeg]="currentKeg"></pour-beer>
-    
+
       <button (click)="editButtonHasBeenClicked(currentKeg)">Edit</button>
     </div>
   </div>
