@@ -2,7 +2,7 @@ h1 {
   color: blue;
 }
 
-.pie {
+.keg {
   border: 1px solid blue;
   border-radius: 8px;
   padding: 10px;
@@ -10,10 +10,10 @@ h1 {
   background-color: LightGreen;
 }
 
-.album {
+/*.album {
   border: 1px solid blue;
   border-radius: 8px;
   padding: 10px;
   width: 25%;
   background-color: LightBlue;
-}
+}*/
