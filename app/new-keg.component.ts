@@ -4,30 +4,34 @@ import { Keg } from './keg.model'
 @Component({
   selector: 'new-keg',
   template: `
-    <h1>New Keg</h1>
-    <div>
-      <label>Enter Keg Brand:</label>
-      <input #newBrand>
+    <div class="col-xs-6">
+      <h1>New Keg</h1>
+      <div class="form-group">
+        <label>Enter Keg Brand:</label><br>
+        <input #newBrand>
+      </div>
+      <div class="form-group">
+        <label>Enter Beer Name:</label><br>
+        <input #newName>
+      </div>
+      <div class="form-group">
+        <label>Enter Pint Price:</label><br>
+        <input #newPrice>
+      </div>
+      <div class="form-group">
+        <label>Enter Alcohol %:</label><br>
+        <input #newAbv>
+        <br>
+        <button (click)="
+        addClicked(newBrand.value, newName.value, newPrice.value, newAbv.value);
+        newBrand.value='';
+        newName.value='';
+        newPrice.value='';
+        newAbv.value='';
+        " class="add-keg btn btn-danger">Add</button>
+      </div>
     </div>
-    <div>
-      <label>Enter Beer Name:</label>
-      <input #newName>
-    </div>
-    <div>
-      <label>Enter Price Per Pint:</label>
-      <input #newPrice>
-    </div>
-    <div>
-      <label>Enter ABV:</label>
-      <input #newAbv>
-      <button (click)="
-      addClicked(newBrand.value, newName.value, newPrice.value, newAbv.value);
-      newBrand.value='';
-      newName.value='';
-      newPrice.value='';
-      newAbv.value='';
-      ">Add</button>
-    </div>
+
   `
 })
 

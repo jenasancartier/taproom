@@ -1,4 +1,27 @@
+.beer {
+  border: solid 1px gray;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
 .cheapBeer{
   background-color: pink;
-  padding: 4px;
+}
+
+.tipsyBeer{
+
+}
+
+#options {
+  margin-bottom: 45px;
+}
+
+.edit-keg {
+  position: absolute;
+  top: 225px;
+  right: 450px;
+}
+
+#list {
+
 }
