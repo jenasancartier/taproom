@@ -4,7 +4,7 @@ import { Keg } from './keg.model';
 @Component({
   selector: 'my-app',
   template: `
-  <div class="container">
+  <div class="container body">
     <div class="jumbotron">
       <h1>Beer Bar</h1>
     </div>

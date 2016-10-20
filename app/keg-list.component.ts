@@ -7,7 +7,7 @@ import { PourBeerComponent } from './pour-beer.component';
   template: `
   <div class="row">
     <div id="options" class="col-xs-6 col-xs-offset-5">
-      <select (change)="onChange($event.target.value)" class="filter">
+      <select id="dropDown" (change)="onChange($event.target.value)" class="selectpicker">
         <option value="all" selected="selected">Show All</option>
         <option value="almostEmpty">Show Almost Empty!</option>
         <option value="full">Show Full</option>
@@ -25,7 +25,9 @@ import { PourBeerComponent } from './pour-beer.component';
         <p>ABV: {{currentKeg.abv}}%</p>
         <p>Pints until empty: {{currentKeg.pintsLeft}}</p>
         <pour-beer [childKeg]="currentKeg"></pour-beer>
-        <button (click)="editButtonHasBeenClicked(currentKeg)">Edit</button>
+        <button (click)="editButtonHasBeenClicked(currentKeg)"
+        class="btn btn-danger"
+        id="editButton">Edit</button>
       </div>
       </div>
       </div>

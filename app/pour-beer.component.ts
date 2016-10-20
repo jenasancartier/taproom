@@ -4,8 +4,14 @@ import { Keg } from './keg.model';
 @Component({
   selector: 'pour-beer',
   template:`
-    <button (click)="pourButtonClicked(childKeg)">Pour Beer</button>
-    <button (click)="swapKeg(childKeg)">Swap Keg</button>
+    <button (click)="pourButtonClicked(childKeg)"
+    id="pourButton"
+    class="btn btn-danger"
+    >Pour Beer</button>
+    <button (click)="swapKeg(childKeg)"
+    id="swapButton"
+    class="btn btn-danger"
+    >Swap Keg</button>
   `
 })
 

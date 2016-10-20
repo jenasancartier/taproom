@@ -1,27 +1,51 @@
+h1 {
+  font-family: 'Vast Shadow', cursive;
+  color: black;
+  font-size: 5em;
+}
+
+body {
+  background-image: url("https://images.unsplash.com/22/brick-wall.JPG?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=e11701a311f8f5c692e351e6418afcae");
+}
+
+label {
+  color: white;
+}
+
+.cheapBeer{
+  color: orange;
+}
+
 .beer {
   border: solid 1px gray;
   padding: 20px;
   margin-bottom: 20px;
-}
-
-.cheapBeer{
-  background-color: pink;
+  background-color: rgba(255, 255, 255, 0.81);;
 }
 
 .tipsyBeer{
+  color: blue;
+}
 
+.jumbotron {
+  font-family: 'Vast Shadow', cursive;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.81);
+  margin-top: 20px;
+}
+
+.jumbotron h1 {
+  font-size: 12em;
+}
+
+.well {
+    background-color: rgba(123, 100, 99, 0.81);
 }
 
 #options {
   margin-bottom: 45px;
 }
 
-.edit-keg {
-  position: absolute;
-  top: 225px;
-  right: 450px;
-}
-
-#list {
-
+#editButton {
+  /*background-color: pink;*/
 }
