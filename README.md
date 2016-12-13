@@ -3,7 +3,7 @@
 # [Tap Room]
 
 __Version 1: October 21, 2016__
-## by [J'ena SanCartier](https://github.com/jenasancartier)
+## by [J'ena SanCartier](https://github.com/jenasancartier) and Larry Tunseth.
 
 ### Description
 A web application that allows a user to log their beer stock and keep tabs on how much they sell so that they can order more when they are low.
